@@ -1,0 +1,8 @@
+development:
+    rest_endpoint: https://wegotest-java.herokuapp.com/findAirlines
+
+test:
+    rest_endpoint: https://wegotest-java.herokuapp.com/findAirlines
+
+production:
+    rest_endpoint: https://wegotest-java.herokuapp.com/findAirlines

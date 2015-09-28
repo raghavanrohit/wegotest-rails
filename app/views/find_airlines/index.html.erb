@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>Wego Test</title>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-3">
+                <div class="page-header">
+                    <h1>Find Airlines</h1>
+                </div>
+                <div ng-controller="FindAirlinesCtrl">
+                    <div>
+                        <form ng-submit="findAirlines()">
+                            <div class="form-group">
+                                <input type="text" ng-model="from" class="form-control" placeholder="From" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" ng-model="to" class="form-control" placeholder="To" required />
+                            </div>
+                            <input type="submit" value="Find" class="btn btn-primary" />
+                        </form>
+
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>
+                        <table class="table table-hover">
+                            <tr ng-repeat="airline in airlineOperators">
+                                <td>{{airline}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+module FindAirlinesHelper
+end
